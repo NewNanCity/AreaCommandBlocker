@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-          server-id: city.newnan.NewNanPlus # Value of the distributionManagement/repository/id field of the pom.xml
+          server-id: io.github.gk0wk.areacommandblocker # Value of the distributionManagement/repository/id field of the pom.xml
           settings-path: ${{ github.workspace }} # location for the settings.xml file
 
       - name: Restore Maven cache
@@ -44,7 +44,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/MCron-*.jar
+          file: target/AreaCommandBlocker-*.jar
           tag: ${{ env.RELEASE_VERSION }}
           overwrite: true
           file_glob: true
