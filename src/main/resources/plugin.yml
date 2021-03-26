@@ -1,0 +1,7 @@
+name: AreaCommandBlocker
+version: ${project.version}
+main: io.github.gk0wk.areacommandblocker.AreaCommandBlocker
+softdepend: [ WorldGuard, Resident, Towny, PlotGuard ]
+authors: [ Gk0Wk ]
+description: Block command bu areas.
+website: https://gk0wk.github.io/

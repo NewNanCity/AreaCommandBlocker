@@ -1,0 +1,22 @@
+version: ${project.version}
+command-group:
+  teleport:
+    - '/tp\S*'
+area:
+  'world:0,0,0:10,10,10':
+    name: main
+    mode: deny
+    list:
+      - 'teleport'
+msg:
+  prefix: '§l[ACB]§r '
+  reload: 'ACB has been reloaded.'
+  load-failed: 'Failed loading unsupported area: {0}'
+  command-deny: 'Sorry, but you don''t have permission to do so.'
+  list-head: '§3======== §3§l[ACB List] §r§3========'
+  list-area-blacklist: '§a§l{0} §c§l[Blacklist]§r'
+  list-area-whitelist: '§a§l{0} §a§l[Whitelist]§r'
+  list-command: '§6- §r{0}:{1}§r'
+  help-head: '§3======== §3§l[ACB Help] §r§3========'
+  help-reload: 'Reload all areas in the config.yml'
+  help-list: 'List all areas with their commands.'
